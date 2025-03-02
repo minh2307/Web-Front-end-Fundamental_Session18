@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt('Mời bạn nhập số bất kỳ(0-999): ');
+        if (num > 0 && num < 999) {
+            let hundreds, dozens, unit;
+            hundreds = Math.floor(num / 100);
+            dozens = Math.floor((num % 100) / 10);
+            unit = Math.floor((num % 100) % 10);
+            switch (hundreds) {
+                case 1:
+                    hundreds = "Một";
+                    break;
+                case 2:
+                    hundreds = "Hai";
+                    break;
+                case 3:
+                    hundreds = "Ba";
+                    break;
+                case 4:
+                    hundreds = "Bốn";
+                    break;
+                case 5:
+                    hundreds = "Năm";
+                    break;
+                case 6:
+                    hundreds = "Sáu";
+                    break;
+                case 7:
+                    hundreds = "Bảy";
+                    break;
+                case 8:
+                    hundreds = "Tám";
+                    break;
+                case 9:
+                    hundreds = "Chín";
+                    break;
+                default:
+                    hundreds = "Không";
+                    break;
+            }
+            switch (dozens) {
+                case 1:
+                    dozens = "Một";
+                    break;
+                case 2:
+                    dozens = "Hai";
+                    break;
+                case 3:
+                    dozens = "Ba";
+                    break;
+                case 4:
+                    dozens = "Bốn";
+                    break;
+                case 5:
+                    dozens = "Năm";
+                    break;
+                case 6:
+                    dozens = "Sáu";
+                    break;
+                case 7:
+                    dozens = "Bảy";
+                    break;
+                case 8:
+                    dozens = "Tám";
+                    break;
+                case 9:
+                    dozens = "Chín";
+                    break;
+                default:
+                    dozens = "Không";
+                    break;
+            }
+            switch (unit) {
+                case 1:
+                    unit = "Một";
+                    break;
+                case 2:
+                    unit = "Hai";
+                    break;
+                case 3:
+                    unit = "Ba";
+                    break;
+                case 4:
+                    unit = "Bốn";
+                    break;
+                case 5:
+                    unit = "Năm";
+                    break;
+                case 6:
+                    unit = "Sáu";
+                    break;
+                case 7:
+                    unit = "Bảy";
+                    break;
+                case 8:
+                    unit = "Tám";
+                    break;
+                case 9:
+                    unit = "Chín";
+                    break;
+                default:
+                    unit = "Không";
+                    break;
+            }
+            let a, b, c;
+            if (hundreds != "không") {
+                a = `${hundreds} Trăm `;
+            }
+            if (dozens != "Không") {
+                b = `${dozens} chục `;
+            }
+            if (unit != "không ") {
+                c = `${unit}`;
+            }
+            console.log(a + b + c);
+
+        } else {
+            console.log("số chỉ được từ 1-->999");
+        }
+    </script>
+</body>
+
+</html>
