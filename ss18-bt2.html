@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let math = +prompt(`Mời nhập vào số điểm toán: `);
+        let eng = +prompt(`Mời nhập vào số điểm anh: `);
+        let lite = +prompt(`Mời nhập vào số điểm văn: `);
+        let socre = (math + eng + lite) / 3;
+        if (socre >= 8) {
+            document.write(`Giỏi`);
+        }
+        else if (socre > 6.5 && socre < 7.9) {
+            document.write(`Khá`);
+        }
+        else if (socre > 5.0 && socre < 6.4) {
+            document.write(`trung bình`)
+        }
+        else {
+            document.write(`yếu`);
+        }
+    </script>
+</body>
+
+</html>

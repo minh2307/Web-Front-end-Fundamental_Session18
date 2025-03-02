@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt("Mời bạn nhập tên: ");
+
+        if (!name) {
+            console.log("Cancelled");
+        } else if (name === "ADMIN") {
+            let pass = prompt("Mời bạn nhập mật khẩu: ");
+
+            if (!pass) {
+                console.log("Cancelled");
+            } else if (pass === "TheMaster") {
+                console.log("Welcome");
+            } else {
+                console.log("Wrong password");
+            }
+        } else {
+            console.log("I don’t know you");
+        }
+    </script>
+</body>
+
+</html>
