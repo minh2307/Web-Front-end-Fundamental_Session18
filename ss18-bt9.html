@@ -8,7 +8,16 @@
 </head>
 
 <body>
-
+    <script>
+        let hour = prompt("mời bạn nhập lần lượt giờ(0-23):  ");
+        let minute = prompt("phút(0-60): ");
+        let second = prompt('giây(0-60): ');
+        let amPm = hour >= 12 ? "AM" : "PM";
+        if (hour > 12) {
+            hour = hour % 12;
+        }
+        console.log(`${hour}:${minute}:${second} ${amPm}`);
+    </script>
 </body>
 
 </html>
